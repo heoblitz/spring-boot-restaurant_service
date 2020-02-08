@@ -1,0 +1,3 @@
+rootProject.name = 'Eat-Go'
+
+include 'eatgo-api'
