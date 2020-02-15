@@ -2,13 +2,13 @@ package co.kr.fastcampus.Eat.Go.domain;
 
 import java.util.List;
 
-public class Restuarant {
+public class Restaurant {
 
     private final String name;
     private final String address;
     private final long id;
 
-    public Restuarant(long id, String name, String address) {
+    public Restaurant(long id, String name, String address) {
         this.id = id;
         this.name = name;
         this.address = address;
