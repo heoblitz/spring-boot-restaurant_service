@@ -1,5 +1,6 @@
 package co.kr.fastcampus.Eat.Go.Interfaces;
 
+import co.kr.fastcampus.Eat.Go.domain.RestaurantRepository;
 import co.kr.fastcampus.Eat.Go.domain.RestaurantRepositoryImpl;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,8 +22,8 @@ public class RestaurantControllerTest {
     @Autowired
     private MockMvc mvc;
 
-    @SpyBean
-    private RestaurantRepositoryImpl restaurantRepositoryImpl;
+    @SpyBean(RestaurantRepositoryImpl.class)
+    private RestaurantRepository restaurantRepositoryImpl;
 
     @Test
     public void list() throws Exception {

@@ -1,7 +1,7 @@
 package co.kr.fastcampus.Eat.Go.Interfaces;
 
 import co.kr.fastcampus.Eat.Go.domain.Restaurant;
-import co.kr.fastcampus.Eat.Go.domain.RestaurantRepositoryImpl;
+import co.kr.fastcampus.Eat.Go.domain.RestaurantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,9 +12,8 @@ import java.util.List;
 @RestController
 class RestaurantController {
 
-
     @Autowired
-    private RestaurantRepositoryImpl repository;
+    private RestaurantRepository repository;
 
     // private RestaurantRepository repository = new RestaurantRepository();
 
