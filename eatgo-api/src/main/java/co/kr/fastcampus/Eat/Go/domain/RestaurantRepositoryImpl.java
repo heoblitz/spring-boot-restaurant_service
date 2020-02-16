@@ -1,13 +1,16 @@
 package co.kr.fastcampus.Eat.Go.domain;
 
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class RestaurantRepository {
+@Component
+public class RestaurantRepositoryImpl {
 
     private List<Restaurant> restaurants = new ArrayList<>();
 
-    public RestaurantRepository () {
+    public RestaurantRepositoryImpl() {
         restaurants.add(new Restaurant(1004L, "Bob zip", "Seoul"));
         restaurants.add(new Restaurant(2020L, "Cyber Food", "Seoul"));
     }
